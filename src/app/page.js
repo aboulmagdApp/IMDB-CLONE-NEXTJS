@@ -17,7 +17,6 @@ async function fetchMoviesList(params) {
 }
 export default async function Home({ searchParams }) {
   const moveslist = await fetchMoviesList(searchParams);
-  console.log(moveslist);
   return (
     <div>
       <Results results={moveslist} />
