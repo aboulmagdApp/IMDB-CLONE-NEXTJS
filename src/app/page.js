@@ -8,7 +8,7 @@ function delay(ms) {
 
 async function fetchMoviesList(params) {
   const genre = params.genre || "featchTrinding";
-  await delay(3000);
+  await delay(100);
   const rsp = await fetch(
     `https://api.themoviedb.org/3${
       genre === "fetchTopRated" ? `/movie/top_rated` : `/trending/all/week`
